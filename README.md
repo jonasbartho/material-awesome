@@ -52,7 +52,7 @@ QT_QPA_PLATFORMTHEME=gtk2
 
 The first variable fixes most indicators (especially electron based ones!), the second tells Qt and KDE applications to use your gtk2 theme set through lxappearance.
 
-### 5)
+### 5) Volume/Brightness key-bindings
 
 I have binded my own F-keys to change the volume and brightness. This can be adjusted to whatever you want:
 [~/.config/awesome/configuration/keys/global.lua](./configurations/keys/global.lua)
