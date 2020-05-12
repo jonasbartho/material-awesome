@@ -86,7 +86,7 @@ local globalKeys =
   ),
   awful.key(
     {modkey},
-    'F12',
+    'Print',
     function()
       awful.util.spawn_with_shell(apps.default.delayed_screenshot)
     end,
@@ -94,7 +94,7 @@ local globalKeys =
   ),
   awful.key(
     {},
-    'F12',
+    'Print',
     function()
       awful.util.spawn_with_shell(apps.default.screenshot)
     end,
@@ -102,7 +102,7 @@ local globalKeys =
   ),
   awful.key(
     {'Control'},
-    'F12',
+    'Print',
     function()
       awful.util.spawn_with_shell(apps.default.region_screenshot)
     end,
@@ -260,34 +260,51 @@ local globalKeys =
   ),--]]
   -- Brightness
   awful.key(
-    { modkey}, "F6",
+    {},
+    'XF86MonBrightnessUp',
     function()
-      awful.spawn('light -A 5')
+      awful.spawn('xbacklight -inc 10')
     end,
-    {description = '+5%', group = 'hotkeys'}
+    {description = '+10%', group = 'hotkeys'}
   ),
   awful.key(
-    { modkey}, "F5",
+    {},
+    'XF86MonBrightnessDown',
     function()
-      awful.spawn('light -U 5')
+      awful.spawn('xbacklight -dec 10')
     end,
-    {description = '-5%', group = 'hotkeys'}
+    {description = '-10%', group = 'hotkeys'}
   ),
   -- ALSA volume control
   awful.key(
-    { modkey}, "F9",
-    function () awful.spawn("amixer -D pulse sset Master 5%+") end,
+    {},
+    'XF86AudioRaiseVolume',
+    function()
+      awful.spawn('amixer -D pulse sset Master 5%+')
+    end,
     {description = 'volume up', group = 'hotkeys'}
   ),
   awful.key(
-    { modkey}, "F8",
-    function () awful.spawn("amixer -D pulse sset Master 5%-") end,
+    {},
+    'XF86AudioLowerVolume',
+    function()
+      awful.spawn('amixer -D pulse sset Master 5%-')
+    end,
     {description = 'volume down', group = 'hotkeys'}
   ),
   awful.key(
-    { modkey}, "F10",
+    {},
+    'XF86AudioMute',
     function()
       awful.spawn('amixer -D pulse set Master 1+ toggle')
+    end,
+    {description = 'toggle mute', group = 'hotkeys'}
+  ),
+  awful.key(
+    {},
+    'XF86AudioNext',
+    function()
+      --
     end,
     {description = 'toggle mute', group = 'hotkeys'}
   ),
