@@ -56,14 +56,15 @@ The first variable fixes most indicators (especially electron based ones!), the 
 
 I have binded my own F-keys to change the volume and brightness. This can be adjusted to whatever you want:
 [~/.config/awesome/configuration/keys/global.lua](./configurations/keys/global.lua)
-
+```
 Lower volume: Superkey+F8
 Higher volume: Superkey+F9
 Toggle mute: Superkey+F10
-
+```
+```
 Lower brightness: Superkey+F5
 Higher brightness: Superkey+F6
-
+```
 ### 6) Read the documentation
 The documentation live within the source code.
 
