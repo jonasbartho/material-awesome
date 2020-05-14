@@ -66,6 +66,7 @@ Lower brightness: Superkey+F5
 Higher brightness: Superkey+F6
 ```
 cheat sheet for multiple bindings: Superkey+F1
+
 Log out: Ctrl+Superkey+q
 ### 6) Read the documentation
 The documentation live within the source code.
