@@ -52,7 +52,7 @@ QT_QPA_PLATFORMTHEME=gtk2
 
 The first variable fixes most indicators (especially electron based ones!), the second tells Qt and KDE applications to use your gtk2 theme set through lxappearance.
 
-### 5) Volume/Brightness key-bindings
+### 5) Important bindings
 
 I have binded my own F-keys to change the volume and brightness. This can be adjusted to whatever you want:
 [~/.config/awesome/configuration/keys/global.lua](./configurations/keys/global.lua)
@@ -65,9 +65,14 @@ Toggle mute: Superkey+F10
 Lower brightness: Superkey+F5
 Higher brightness: Superkey+F6
 ```
+Handy:
+```
+Log out: Ctrl+Superkey+q
+Show exit screen(shutdown/reboot/sleep/logout/lock): Alt+Space
+```
+
 cheat sheet for multiple bindings: Superkey+F1
 
-Log out: Ctrl+Superkey+q
 ### 6) Read the documentation
 The documentation live within the source code.
 
