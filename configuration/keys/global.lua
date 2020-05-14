@@ -46,9 +46,9 @@ local globalKeys =
     {altkey},
     'space',
     function()
-      _G.screen.primary.left_panel:toggle(true)
+       _G.exit_screen_show()
     end,
-    {description = 'show main menu', group = 'awesome'}
+    {description = 'show exit screen', group = 'awesome'}
   ),
   awful.key({modkey}, 'u', awful.client.urgent.jumpto, {description = 'jump to urgent client', group = 'client'}),
   awful.key(
