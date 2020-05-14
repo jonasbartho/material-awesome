@@ -68,7 +68,7 @@ Higher brightness: Superkey+F6
 Handy:
 ```
 Log out: Ctrl+Superkey+q
-Show exit screen(shutdown/reboot/sleep/logout/lock): Alt+Space
+Show exit screen(shutdown/reboot/suspend/logout/lock): Alt+Space
 ```
 
 cheat sheet for multiple bindings: Superkey+F1
