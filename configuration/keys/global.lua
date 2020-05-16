@@ -346,12 +346,12 @@ local globalKeys =
       awful.util.spawn_with_shell('lutris')
     end
   ),
-  -- System Monitor hotkey - MATE version
+  -- System Monitor hotkey - GNOME version
   awful.key(
     {modkey},
     'm',
     function()
-      awful.util.spawn_with_shell('mate-system-monitor')
+      awful.util.spawn_with_shell('gnome-system-monitor')
     end
   ),
   -- File Manager
