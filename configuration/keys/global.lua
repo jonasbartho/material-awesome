@@ -260,14 +260,14 @@ local globalKeys =
   ),--]]
   -- Brightness
   awful.key(
-    { modkey}, "F6",
+    { modkey}, "F10",
     function()
       awful.spawn('light -A 5')
     end,
     {description = '+5%', group = 'hotkeys'}
   ),
   awful.key(
-    { modkey}, "F5",
+    { modkey}, "F9",
     function()
       awful.spawn('light -U 5')
     end,
@@ -275,17 +275,17 @@ local globalKeys =
   ),
   -- ALSA volume control
   awful.key(
-    { modkey}, "F9",
+    { modkey}, "F3",
     function () awful.spawn("amixer -D pulse sset Master 5%+") end,
     {description = 'volume up', group = 'hotkeys'}
   ),
   awful.key(
-    { modkey}, "F8",
+    { modkey}, "F2",
     function () awful.spawn("amixer -D pulse sset Master 5%-") end,
     {description = 'volume down', group = 'hotkeys'}
   ),
   awful.key(
-    { modkey}, "F10",
+    { modkey}, "F1",
     function()
       awful.spawn('amixer -D pulse set Master 1+ toggle')
     end,
